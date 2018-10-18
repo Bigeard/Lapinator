@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="page-left">
+        <div class="page">
             <header>
                 <a href=""><img class="logo" alt="logo" src="img/logo.png" alt=""></a>
                 <nav>
@@ -27,7 +25,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </header>
-            <div class="block-center">
+            <div class="container">
                 <div class="block">
                     <h1>Lapinator</h1>
                     <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -41,43 +39,8 @@
             </div>
         </div>
         <div class="background-image"></div>
-    </div>
 </body>
 
-<script>
-    var x = document.getElementById("menu");
-    var i = document.getElementById("icon");
-
-
-    window.onresize = function(event) {
-        detectSize();
-    };
-
-    window.onload = function(event){
-        detectSize();
-    };
-
-    function detectSize(){
-        if (window.innerWidth <= 580) {
-            mobile = true;
-            x.style.display = "none";
-            i.style.display = "block";
-        } else {
-            mobile = false;
-            i.style.display = "none";
-            x.style.display = "flex";
-        }    
-    }
-
-    function clickMenu() {
-        if (x.style.display === "block") {
-            x.style.display = "none";
-            i.style.transform = "rotate(180deg)"
-        } else {
-            x.style.display = "block";
-            i.style.transform = "rotate(90deg)"
-        }
-    }
-</script>
+<script src="js/script.js"></script>
 
 </html>
