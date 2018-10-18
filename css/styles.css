@@ -152,46 +152,47 @@ header #icon {
   margin: 0;
 }
 
-.page-left .block-center form {
-  margin: 80px 0 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.page-left .block-center input {
-  width: 500px;
-  height: 60px;
-  background-color: white;
-  color: grey;
-  border: none;
-  border-radius: 20px;
+.page-left .block-center .radius {
+  width: 104%;
+  height: 58px;
+  margin: 10px;
+  border-radius: 29px;
+  background-color: #fff;
   -webkit-box-shadow: 3px 3px 45px 8px #ebebeb;
           box-shadow: 3px 3px 45px 8px #ebebeb;
-  padding: 0 100px 0 60px;
 }
 
 @media screen and (max-width: 740px) {
-  .page-left .block-center input {
+  .page-left .block-center .radius {
     width: 80%;
   }
 }
 
+.page-left .block-center form {
+  width: 110%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-left .block-center input {
+  width: 80%;
+  height: 58px;
+  border: 0px solid;
+  font-size: 18px;
+  background-color: transparent;
+}
+
 .page-left .block-center button {
-  width: 140px;
+  width: 150px;
   height: 50px;
+  margin: 4px;
+  border: 0px solid;
+  border-radius: 29px;
+  text-align: center;
   background-color: aqua;
   color: white;
-  border: 2px solid aqua;
-  border-radius: 20px;
-  margin: 0 -85px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .page-left .block-center button:hover {
@@ -208,7 +209,7 @@ header #icon {
 }
 
 .page-left .block-center .sign-in {
-  margin: 0 -40px 0 20px;
+  margin: 20px;
   z-index: 2;
   color: grey;
 }
