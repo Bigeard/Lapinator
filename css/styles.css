@@ -133,7 +133,7 @@ nav .menu li .active {
 @media screen and (max-width: 580px) {
   nav .menu {
     position: fixed;
-    top: 98px;
+    top: 89px;
     left: -40px;
     width: 111%;
     margin: 0;
