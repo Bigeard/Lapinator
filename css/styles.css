@@ -276,6 +276,10 @@ nav #icon {
   }
 }
 
+.page .container #error {
+  text-align: center;
+}
+
 .page .container .info {
   display: block;
   text-align: center;
