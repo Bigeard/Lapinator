@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin: 0;
   display: -webkit-box;
@@ -8,11 +8,20 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 740px) {
+  html,
+  body {
+    background-image: url("../img/background-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 a {
   outline: none;
 }
 
-header {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,19 +32,45 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-header .logo {
+nav .logo {
   width: 64px;
   height: 64px;
 }
 
-header #menu {
+nav #items-menu {
   display: none;
+  -webkit-box-shadow: 0px 55px 66px 0px #ececec8f;
+          box-shadow: 0px 55px 66px 0px #ececec8f;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: menu 1s;
+          animation: menu 1s;
 }
 
-header nav ul,
-header nav li {
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav .menu ul,
+nav .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +82,8 @@ header nav li {
           align-items: center;
 }
 
-header nav ul a,
-header nav li a {
+nav .menu ul a,
+nav .menu li a {
   width: 100px;
   height: 26px;
   text-align: center;
@@ -56,38 +91,56 @@ header nav li a {
   text-decoration: none;
 }
 
-header nav ul a:hover,
-header nav li a:hover {
+nav .menu ul a:hover,
+nav .menu li a:hover {
   color: aqua;
 }
 
 @media screen and (max-width: 580px) {
-  header nav ul a,
-  header nav li a {
-    margin: 0 0  20px 0;
+  nav .menu ul a,
+  nav .menu li a {
+    margin: 0 0 20px 0;
+    font-weight: bold;
   }
 }
 
-header nav ul .active,
-header nav li .active {
+@media (max-width: 740px) and (min-width: 580px) {
+  nav .menu ul a,
+  nav .menu li a {
+    font-weight: bold;
+  }
+  nav .menu ul a:hover,
+  nav .menu li a:hover {
+    color: white;
+  }
+}
+
+nav .menu ul .active,
+nav .menu li .active {
   color: aqua;
   border-bottom: 2px solid aqua;
 }
 
-@media screen and (max-width: 580px) {
-  header nav {
-    position: fixed;
-    top: 96px;
-    left: -40px;
-    -webkit-box-shadow: 0px 55px 66px 0px #ececec8f;
-            box-shadow: 0px 55px 66px 0px #ececec8f;
-    width: 110%;
-    margin: 0;
-    background: white;
+@media (max-width: 740px) and (min-width: 580px) {
+  nav .menu ul .active,
+  nav .menu li .active {
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
   }
 }
 
-header #icon {
+@media screen and (max-width: 580px) {
+  nav .menu {
+    position: fixed;
+    top: 98px;
+    left: -40px;
+    width: 111%;
+    margin: 0;
+  }
+}
+
+nav #icon {
   display: none;
   color: black;
   font-size: 34px;
@@ -158,7 +211,7 @@ header #icon {
   }
 }
 
-.page .container form {
+.page .container #form {
   margin: 80px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +224,7 @@ header #icon {
 }
 
 @media screen and (max-width: 740px) {
-  .page .container form {
+  .page .container #form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -186,8 +239,8 @@ header #icon {
   color: grey;
   border: none;
   border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 45px 8px #ebebeb;
-          box-shadow: 3px 3px 45px 8px #ebebeb;
+  -webkit-box-shadow: 3px 3px 45px 8px #ebebeb80;
+          box-shadow: 3px 3px 45px 8px #ebebeb80;
   padding: 0 100px 0 60px;
 }
 
@@ -208,6 +261,7 @@ header #icon {
   margin: 0 -85px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  font-weight: 900;
 }
 
 .page .container button:hover {
