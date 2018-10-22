@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   width: 100%;
   margin: 0;
   display: -webkit-box;
@@ -37,8 +37,8 @@ nav {
 }
 
 nav .logo {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 
 nav #items-menu {
@@ -93,48 +93,27 @@ nav .menu li a {
 
 nav .menu ul a:hover,
 nav .menu li a:hover {
-  color: aqua;
+  color: #4488ff;
 }
 
 @media screen and (max-width: 580px) {
   nav .menu ul a,
   nav .menu li a {
     margin: 0 0 20px 0;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 740px) and (min-width: 580px) {
-  nav .menu ul a,
-  nav .menu li a {
-    font-weight: bold;
-  }
-  nav .menu ul a:hover,
-  nav .menu li a:hover {
-    color: white;
   }
 }
 
 nav .menu ul .active,
 nav .menu li .active {
-  color: aqua;
-  border-bottom: 2px solid aqua;
-}
-
-@media (max-width: 740px) and (min-width: 580px) {
-  nav .menu ul .active,
-  nav .menu li .active {
-    color: white;
-    border-bottom: 2px solid white;
-    font-weight: bold;
-  }
+  color: #4488ff;
+  border-bottom: 2px solid #4488ff;
 }
 
 @media screen and (max-width: 580px) {
   nav .menu {
     position: fixed;
-    top: 89px;
-    left: -40px;
+    top: 74px;
+    left: -36px;
     width: 111%;
     margin: 0;
   }
@@ -142,8 +121,8 @@ nav .menu li .active {
 
 nav #icon {
   display: none;
-  color: black;
-  font-size: 34px;
+  color: #616f90;
+  font-size: 28px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -233,35 +212,35 @@ nav #icon {
 }
 
 .page .container input {
+  font-size: 15px;
   width: 500px;
   height: 60px;
   background-color: white;
   color: grey;
   border: none;
-  border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 45px 8px #ebebeb80;
-          box-shadow: 3px 3px 45px 8px #ebebeb80;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 45px 8px #80808048;
+          box-shadow: 3px 3px 45px 8px #80808048;
   padding: 0 100px 0 60px;
 }
 
 @media screen and (max-width: 740px) {
   .page .container input {
-    width: 80%;
+    width: 105%;
     padding: 0 20px 0 60px;
   }
 }
 
 .page .container button {
-  width: 140px;
+  width: 160px;
   height: 50px;
-  background-color: aqua;
+  background-color: #50e3c2;
   color: white;
-  border: 2px solid aqua;
-  border-radius: 20px;
-  margin: 0 -85px;
+  border: 2px solid #50e3c2;
+  border-radius: 50px;
+  margin: 0 -98px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-weight: 900;
 }
 
 .page .container button:hover {
@@ -272,7 +251,8 @@ nav #icon {
 
 @media screen and (max-width: 740px) {
   .page .container button {
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
+    height: 46px;
   }
 }
 
@@ -282,20 +262,22 @@ nav #icon {
 
 .page .container .info {
   display: block;
+  font-style: italic;
   text-align: center;
-  color: grey;
+  color: #c2c6d2;
   text-decoration: none;
+  margin: 70px 0 0 0;
 }
 
 .page .container .sign-in {
   margin: 0 -40px 0 20px;
   z-index: 2;
-  color: grey;
+  color: #bfc3cf;
 }
 
 @media screen and (max-width: 740px) {
   .page .container .sign-in {
-    margin: 0 68% -38px 20px;
+    margin: 0 92% -38px 20px;
   }
 }
 

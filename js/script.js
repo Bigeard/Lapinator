@@ -65,6 +65,6 @@ function clickSubmit() {
     if(document.getElementById("text").value == "hello world") {
         window.location = "blog.html";
     } else {
-        document.getElementById("error").innerHTML = "Fail authentification..."
+        document.getElementById("error").innerHTML = "Erreur d'authentification..."
     }
 }
