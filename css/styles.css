@@ -17,7 +17,7 @@ body {
   }
 }
 
-a {
+a, button {
   outline: none;
 }
 
@@ -67,6 +67,10 @@ nav #items-menu {
   100% {
     opacity: 1;
   }
+}
+
+nav .menu {
+  z-index: 2;
 }
 
 nav .menu ul,
@@ -271,7 +275,7 @@ nav #icon {
 
 .page .container .sign-in {
   margin: 0 -40px 0 20px;
-  z-index: 2;
+  z-index: 1;
   color: #bfc3cf;
 }
 

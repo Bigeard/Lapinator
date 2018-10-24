@@ -62,8 +62,8 @@ function clickMenu() {
 // });
 
 function clickSubmit() {
-    if(document.getElementById("text").value == "hello world") {
-        window.location = "blog.html";
+    if(document.getElementById("text").value == "nuggets") {
+        window.location = "hi.html";
     } else {
         document.getElementById("error").innerHTML = "Erreur d'authentification..."
     }

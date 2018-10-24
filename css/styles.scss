@@ -1,5 +1,9 @@
+// Couleurs 
+
 $primary: #50e3c2;
 $secondary: #4488ff;
+
+// Contenu principal
 
 html,
 body {
@@ -15,9 +19,11 @@ body {
     }
 }
 
-a {
+a, button {
     outline: none;
 }
+
+// MENU, NAVBAR
 
 nav {
     display: flex;
@@ -49,13 +55,12 @@ nav {
     }
 
     .menu {
-
+        z-index: 2;
         ul,
         li {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-
 
             a {
                 width: 100px;
@@ -94,13 +99,9 @@ nav {
         font-size: 28px;
         transition: all 0.5s;
     }
-
-    // @media (min-width: 580px) and (max-width: 740px) {
-    //     width: 100%;
-    // }
 }
 
-
+// Image en arriere plan ( hamster )
 
 .background-image {
     width: 100%;
@@ -115,11 +116,11 @@ nav {
     }
 }
 
+// Contenu de la page d'accueil
+
 .page {
     width: 600px;
     height: 100%;
-
-
 
     .container {
         width: 100%;
@@ -219,14 +220,13 @@ nav {
 
         .sign-in {
             margin: 0 -40px 0 20px;
-            z-index: 2;
+            z-index: 1;
             color: #bfc3cf;
 
             @media screen and (max-width: 740px) {
                 margin: 0 92% -38px 20px;
             }
         }
-
 
         @media screen and (max-width: 740px) {
             padding: 0;
