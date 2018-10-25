@@ -19,7 +19,7 @@ body {
     }
 }
 
-a, button {
+a, button, input {
     outline: none;
 }
 
@@ -194,8 +194,8 @@ nav {
 
             &:hover {
                 background-color: white;
-                border: 2px solid grey;
-                color: grey;
+                border: 2px solid #bfc3cf;
+                color: #bfc3cf;
             }
 
             @media screen and (max-width: 740px) {
@@ -207,6 +207,7 @@ nav {
 
         #error {
             text-align: center;
+            color: #ff5858;
         }
 
         .info {

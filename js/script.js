@@ -62,9 +62,11 @@ function clickMenu() {
 // });
 
 function clickSubmit() {
-    if(document.getElementById("text").value == "nuggets") {
+    var pwd = document.getElementById("text")
+    if(pwd.value == "nuggets") {
         window.location = "hi.html";
     } else {
         document.getElementById("error").innerHTML = "Erreur d'authentification..."
+        pwd.style.border= "solid 1px #ff5858";
     }
 }
