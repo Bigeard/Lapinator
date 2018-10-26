@@ -147,7 +147,7 @@ nav #icon {
 }
 
 .page {
-  width: 100%;
+  width: 600px;
   height: 100%;
 }
 
@@ -289,6 +289,12 @@ nav #icon {
 @media screen and (max-width: 740px) {
   .page .container {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .page {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

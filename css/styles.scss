@@ -119,7 +119,7 @@ nav {
 // Contenu de la page d'accueil
 
 .page {
-    width: 100%;
+    width: 600px;
     height: 100%;
 
     .container {
@@ -232,5 +232,8 @@ nav {
         @media screen and (max-width: 740px) {
             padding: 0;
         }
+    }
+    @media screen and (max-width: 740px) {
+        width: 100%;
     }
 }
